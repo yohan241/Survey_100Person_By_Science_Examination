@@ -32,9 +32,9 @@ const slides = [
     },
     {
         img: 'accept.gif',
-        text: "hehe",
+        text: "YYAAAAYYYY!!!!!!!",
         dull: false,
-        button: "hehe?"
+        button: "baliw"
     },
     {
         img: 'slidemore.gif',
@@ -144,7 +144,36 @@ function renderSlide(idx, direction = 1) {
     // Text
     const textDiv = document.createElement('div');
     textDiv.className = 'center-text';
-    textDiv.innerHTML = slide.text;
+    // Animate the 2nd to the last slide's text (the letter)
+    if (idx === slides.length - 2) {
+        textDiv.style.opacity = '0';
+        textDiv.style.transform = 'translateY(80px)';
+        textDiv.innerHTML = '';
+        setTimeout(() => {
+            textDiv.style.transition = 'transform 1s cubic-bezier(.77,0,.18,1), opacity 1s cubic-bezier(.77,0,.18,1)';
+            textDiv.style.opacity = '1';
+            textDiv.style.transform = 'translateY(0)';
+            setTimeout(() => {
+                // Extract inner text from <span class='letter'>...</span>
+                const match = slides[idx].text.match(/<span class=['"]letter['"]>([\s\S]*)<\/span>/i);
+                let letterText = match ? match[1] : slides[idx].text;
+                const span = document.createElement('span');
+                span.className = 'letter';
+                textDiv.appendChild(span);
+                let i = 0;
+                function typeWriter() {
+                    if (i <= letterText.length) {
+                        span.innerHTML = letterText.slice(0, i).replace(/\n/g, '<br>');
+                        i++;
+                        setTimeout(typeWriter, 30);
+                    }
+                }
+                typeWriter();
+            }, 1000);
+        }, 100);
+    } else {
+        textDiv.innerHTML = slide.text;
+    }
     slideDiv.appendChild(textDiv);
     // Button(s)
     if (slide.button) {
@@ -167,6 +196,10 @@ function renderSlide(idx, direction = 1) {
             const noGifs = ['no1.gif', 'no2.gif', 'no3.gif', 'no4.gif'];
             const randomGif = noGifs[Math.floor(Math.random() * noGifs.length)];
             img.src = randomGif;
+            if (stubbornNoCount >= 5) {
+                noBtn.style.display = 'none';
+                return;
+            }
             noBtn.textContent = [
                 "NO",
                 "AYAW",
@@ -188,6 +221,33 @@ function renderSlide(idx, direction = 1) {
     }
     // Add new slide to container
     container.appendChild(slideDiv);
+
+    // Play happy-happy-happy-song.mp3 on the slide after the question slide
+    if (idx > 0 && slides[idx - 1].question) {
+        let audio = document.getElementById('happy-audio');
+        if (!audio) {
+            audio = document.createElement('audio');
+            audio.id = 'happy-audio';
+            audio.src = 'happy-happy-happy-song.mp3';
+            audio.autoplay = true;
+            audio.loop = false;
+            audio.volume = 0.3;
+            audio.style.display = 'none';
+            document.body.appendChild(audio);
+        } else {
+            audio.currentTime = 0;
+            audio.volume = 0.3;
+            audio.play();
+        }
+    } else {
+        // Stop the audio if it exists and we're not on the happy slide
+        const audio = document.getElementById('happy-audio');
+        if (audio) {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    }
+
     // Animate both slides
     setTimeout(() => {
         // Move current slide out, if exists
