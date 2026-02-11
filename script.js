@@ -59,6 +59,28 @@ const slides = [
 let current = 0;
 let stubbornNoCount = 0;
 
+// Add soft background music throughout the site
+window.addEventListener('DOMContentLoaded', function() {
+    let bgAudio = document.getElementById('bg-audio');
+    if (!bgAudio) {
+        bgAudio = document.createElement('audio');
+        bgAudio.id = 'bg-audio';
+        bgAudio.src = 'You\'ll Be Safe Here - Rivermaya  Piano Cover by LJ Madrigal.mp3';
+        bgAudio.loop = true;
+        bgAudio.volume = 0.12;
+        bgAudio.style.display = 'none';
+        document.body.appendChild(bgAudio);
+    }
+    // Try to play on first user interaction
+    function tryPlay() {
+        bgAudio.play();
+        document.removeEventListener('click', tryPlay);
+        document.removeEventListener('touchstart', tryPlay);
+    }
+    document.addEventListener('click', tryPlay);
+    document.addEventListener('touchstart', tryPlay);
+});
+
 function renderSlide(idx, direction = 1) {
     const slide = slides[idx];
     const container = document.getElementById('slides-container');
@@ -149,10 +171,29 @@ function renderSlide(idx, direction = 1) {
         textDiv.style.opacity = '0';
         textDiv.style.transform = 'translateY(80px)';
         textDiv.innerHTML = '';
+        // Add reveal button as clickable PNG
+        const revealBtn = document.createElement('img');
+        revealBtn.src = 'love-letter-envelope-with-heart-clipart.png';
+        revealBtn.alt = 'Read the Letter';
+        revealBtn.style.width = '90px';
+        revealBtn.style.cursor = 'pointer';
+        revealBtn.style.marginTop = '40px';
+        revealBtn.style.opacity = '0';
+        revealBtn.style.transform = 'translateY(40px)';
+        revealBtn.className = 'reveal-btn-img';
+        textDiv.appendChild(revealBtn);
+        // Animate popup for button
         setTimeout(() => {
             textDiv.style.transition = 'transform 1s cubic-bezier(.77,0,.18,1), opacity 1s cubic-bezier(.77,0,.18,1)';
             textDiv.style.opacity = '1';
             textDiv.style.transform = 'translateY(0)';
+            revealBtn.style.transition = 'transform 0.7s cubic-bezier(.77,0,.18,1), opacity 0.7s cubic-bezier(.77,0,.18,1)';
+            revealBtn.style.opacity = '1';
+            revealBtn.style.transform = 'translateY(0)';
+        }, 100);
+        revealBtn.onclick = () => {
+            revealBtn.style.display = 'none';
+            // Start typewriter effect
             setTimeout(() => {
                 // Extract inner text from <span class='letter'>...</span>
                 const match = slides[idx].text.match(/<span class=['"]letter['"]>([\s\S]*)<\/span>/i);
@@ -166,17 +207,25 @@ function renderSlide(idx, direction = 1) {
                         span.innerHTML = letterText.slice(0, i).replace(/\n/g, '<br>');
                         i++;
                         setTimeout(typeWriter, 30);
+                    } else {
+                        // Show reply button after letter is fully revealed
+                        const btn = document.createElement('button');
+                        btn.className = 'reply-btn';
+                        btn.textContent = slides[idx].button || '<3';
+                        btn.onclick = () => nextSlide(1);
+                        btn.style.marginTop = '32px';
+                        textDiv.appendChild(btn);
                     }
                 }
                 typeWriter();
-            }, 1000);
-        }, 100);
+            }, 200);
+        };
     } else {
         textDiv.innerHTML = slide.text;
     }
     slideDiv.appendChild(textDiv);
     // Button(s)
-    if (slide.button) {
+    if (slide.button && idx !== slides.length - 2) {
         const btn = document.createElement('button');
         btn.className = 'reply-btn';
         btn.textContent = slide.button;
@@ -205,10 +254,8 @@ function renderSlide(idx, direction = 1) {
                 "AYAW",
                 "ayaw ko nga",
                 "Nope!",
-                "Try again!",
                 "HINDE",
-                "Still no!",
-                "C'mon!"
+                "Hindi talaga.",
             ][stubbornNoCount % 8] || "No";
         };
         const btnWrap = document.createElement('div');
