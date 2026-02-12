@@ -44,7 +44,7 @@ const slides = [
     },
     {
         img: 'slide8.gif',
-        text: "<span class='letter'>Dear Valentine, <br><br>Thank you for making my day brighter. I hope this little surprise made you smile!<br><br>With all my heart,<br>Your Secret Admirer</span>",
+        text: "<span class='letter'><b>Sa aking minamahal na binibini</b> <br><br>Maligaya kaarawan ng mga puso binibini maricar, sa nag iisang at walang katuad sa lahat. Naway magustuhan mo ang aking supresa para sayo.<br><br> Marahil hindi pa tayo maayos ngayon ngunit nais ko magpasalamat sa lahat ng binigay na pagmamahal mo saakin, sa mga pagsisikap na pinakita mo saakin, sa mga masayang araw at bonding natin dalawa kahit kaylan hindi ko malilimutan lahat ng yun.<br><br> Alam ko hindi pa sapat ang pagmamahal ko sayo, hayaan mo ipakita ko pa sayo kung paano mag mahal at mag alaga ang isang Daniel Padilla para sayo.<br> Sa bawat araw ay hindi kita kasama, kahit magkalayo tayo sa isat' isa pagibig ko sayo hindi mawawala at sayo lang ako aking sinta.<br> <br>Kung ikaw ay nalulungkot lagi mo isipin ang mga masasayang araw natin na magkasama tayo, alam mo kung ano saakin? Yung araw na una natin pagkikita, sa buong buhay ko ngayon ko lang naramdaman ang paghinto ng mundo, na parang tayo dalawa lang ang tao nung araw na yun.<br> Kung nagtataka ka paano ako nakagawa ng site na ganito, well hindi ako gumawa netong site sa kaibigan kong IT (kita mo naman sa link kung sino) and hindi to libre lang, may deal kami.<br><br> Alam ko hindi tayo makakapagkita ng feb 14 at busy ka sa school, ngunit inaaya kita kung kaylan ka puwede at free ngayon buwan? kahit mag bonding lang tayo like nood ganon, miss ko na yung bonding natin eh :((( no pressure i can wait kung kaylan ka free. Yunn lang naway nagustuhan mo ang aking munting supresa sayo hehe. <br><br> Je t'aime, ich liebe dich, te amo. Tatlong magkakaibang lengguwahe pero iisa lang ang ibig sabihin nito, Mahal kita binibining maricar. <br><br><br><b>Nagmamahal <br>Daniel Padilla</b></span>",
         dull: false,
         button: "<3"
     },
@@ -208,13 +208,13 @@ function renderSlide(idx, direction = 1) {
                         i++;
                         setTimeout(typeWriter, 30);
                     } else {
-                        // Show reply button after letter is fully revealed
+                        // Show reply button after letter is fully revealed, outside textDiv
                         const btn = document.createElement('button');
                         btn.className = 'reply-btn';
                         btn.textContent = slides[idx].button || '<3';
                         btn.onclick = () => nextSlide(1);
                         btn.style.marginTop = '32px';
-                        textDiv.appendChild(btn);
+                        slideDiv.appendChild(btn);
                     }
                 }
                 typeWriter();
