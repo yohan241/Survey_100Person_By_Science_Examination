@@ -1,25 +1,25 @@
 const slides = [
-     {
+    {
         img: 'slide1.gif',
-        text: "HELLOOOO!",
+        text: "hoyy!",
         dull: true,
-        button: "HIII?"
+        button: "hmmm?"
     },
     {
         img: 'slide2.gif',
-        text: "feeling ko naman medjo halata na kung ano ito",
+        text: "hoyy!! ikaw nga",
         dull: true,
-        button: "di ahh"
+        button: "ako ba?"
     },
     {
         img: 'slide3.gif',
-        text: "ehhehe pasurvey survey pang nalalaman eh no",
+        text: "oo malamang, sino pa ba magandang babae napindot ng link",
         dull: false,
         button: "...."
     },
     {
         img: 'slide4.gif',
-        text: "i knoww naa masama pa pakiramdam mo, and pagods u, pero...",
+        text: "oo na hindi pa tayo bati, pero..",
         dull: false,
         button: "???"
     },
@@ -38,19 +38,19 @@ const slides = [
     },
     {
         img: 'slidemore.gif',
-        text: "meronnn mee surprisee paa for youu",
+        text: "i have a little surprise for you..",
         dull: false,
         button: "ano yon?"
     },
     {
         img: 'slide8.gif',
-        text: "<span class='letter'><b>Para sa aking nililigawan, Bri</b> <br><br>I hopee youu aree doingg welll despitee the hectic schedule you endured this previous week. It makes me genuinely worried a bit every time you undergo these busy timeframes spanning days or even weeks. I know and i do understand that you can do it, and that you are used to itt. I know that there is almost nothing you can do about it and that you can only tread forward during these extremely chaotic times and situations.<br><br><b>You are so so nice. you are such an amazing and strong person.</b><br><br>I know that i can't directly helpp with your situations. But i will always be heree to support you and help however i can. whether it be asking me for advice, or just simply playing with me. I will be here to give you comfort and rest. For a long treachorous journey through a dry desert,  i will try my bestt to provide you a cool oasis to aid in your journey.<br><br><b>That is why, i am writing to you this letter formally invite you to have dinner with me this saturday night after our duties.</b><br><br>I know that you are not feeling well as of now. And i know that maybe when Saturday comes you will be tired also. I am not pressuring or forcing you to accept this invitation even if we prearranged this beforehand. If you feel that you want to rest on the day of, or if you dont have an appetite, that is fully okay with me. So don't worry.<br><br>I know that we are both busy, and that this sem is a stressful sem for both of us. But i know we can get through this together. <b>You are already the guiding light for my dark environment. I hope i can be the same to you.</b><br><br>I like you so much, i hope this letter can fully convey that to you. Thank youu for your presence, your comfort, and yourkindness. I dont know if i can ever repay it to you.<br><br><b>i love u bri.</b><br><br><br>Your medyo chubby na manliligaw,<br><b>Yohan &lt;3</b></span>",
+        text: "<span class='letter'><b>Sa aking minamahal na binibini</b> <br><br>Maligaya kaarawan ng mga puso binibini maricar, sa nag iisang at walang katuad sa lahat. Naway magustuhan mo ang aking supresa para sayo.<br><br> Marahil hindi pa tayo maayos ngayon ngunit nais ko magpasalamat sa lahat ng binigay na pagmamahal mo saakin, sa mga pagsisikap na pinakita mo saakin, sa mga masayang araw at bonding natin dalawa kahit kaylan hindi ko malilimutan lahat ng yun.<br><br> Alam ko hindi pa sapat ang pagmamahal ko sayo, hayaan mo ipakita ko pa sayo kung paano mag mahal at mag alaga ang isang Daniel Padilla para sayo.<br> Sa bawat araw ay hindi kita kasama, kahit magkalayo tayo sa isat' isa pagibig ko sayo hindi mawawala at sayo lang ako aking sinta.<br> <br>Kung ikaw ay nalulungkot lagi mo isipin ang mga masasayang araw natin na magkasama tayo, alam mo kung ano saakin? Yung araw na una natin pagkikita, sa buong buhay ko ngayon ko lang naramdaman ang paghinto ng mundo, na parang tayo dalawa lang ang tao nung araw na yun.<br> Kung nagtataka ka paano ako nakagawa ng site na ganito, well hindi ako gumawa netong site sa kaibigan kong IT (kita mo naman sa link kung sino) and hindi to libre lang, may deal kami.<br><br> Alam ko hindi tayo makakapagkita ng feb 14 at busy ka sa school, ngunit inaaya kita kung kaylan ka puwede at free ngayon buwan? kahit mag bonding lang tayo like nood ganon, miss ko na yung bonding natin eh :((( no pressure i can wait kung kaylan ka free. Yunn lang naway nagustuhan mo ang aking munting supresa sayo hehe. <br><br> Je t'aime, ich liebe dich, te amo. Tatlong magkakaibang lengguwahe pero iisa lang ang ibig sabihin nito, Mahal kita binibining maricar. <br><br><br><b>Nagmamahal <br>Daniel Padilla</b></span>",
         dull: false,
         button: "<3"
     },
     {
         img: 'last.gif',
-        text: "thank youu - yohan",
+        text: "i love you - daniel",
         dull: false,
         end: true
     }
