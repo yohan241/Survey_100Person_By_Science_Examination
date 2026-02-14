@@ -1,32 +1,32 @@
 const slides = [
     {
         img: 'slide1.gif',
-        text: "hoyy!",
+        text: "Hi boss",
         dull: true,
-        button: "hmmm?"
+        button: "Hi"
     },
     {
         img: 'slide2.gif',
-        text: "hoyy!! ikaw nga",
+        text: "Sana alam mo na kung anong reason neto",
         dull: true,
-        button: "ako ba?"
+        button: "Hindi po"
     },
     {
         img: 'slide3.gif',
-        text: "oo malamang, sino pa ba magandang babae napindot ng link",
+        text: "Kasi ano may gusto lang sana ako itanong hehe",
         dull: false,
-        button: "...."
+        button: "Ano yun?"
     },
     {
         img: 'slide4.gif',
-        text: "oo na hindi pa tayo bati, pero..",
+        text: "I know busy ka and hindi tayo makapag date today kasi busy ang sched natin both",
         dull: false,
-        button: "???"
+        button: "Hay nako loveyy"
     },
     
     {
         img: 'slide5.jpeg',
-        text: "Will you be my Valentine?",
+        text: "But, Will you be my Valentine?",
         dull: false,
         question: true
     },
@@ -34,23 +34,23 @@ const slides = [
         img: 'accept.gif',
         text: "YYAAAAYYYY!!!!!!!",
         dull: false,
-        button: "baliw"
+        button: "Hay nako HAHAHA"
     },
     {
         img: 'slidemore.gif',
-        text: "i have a little surprise for you..",
+        text: "Also meron pa me surprise pa",
         dull: false,
         button: "ano yon?"
     },
     {
         img: 'slide8.gif',
-        text: "<span class='letter'><b>Sa aking minamahal na binibini</b> <br><br>Maligaya kaarawan ng mga puso binibini maricar, sa nag iisang at walang katuad sa lahat. Naway magustuhan mo ang aking supresa para sayo.<br><br> Marahil hindi pa tayo maayos ngayon ngunit nais ko magpasalamat sa lahat ng binigay na pagmamahal mo saakin, sa mga pagsisikap na pinakita mo saakin, sa mga masayang araw at bonding natin dalawa kahit kaylan hindi ko malilimutan lahat ng yun.<br><br> Alam ko hindi pa sapat ang pagmamahal ko sayo, hayaan mo ipakita ko pa sayo kung paano mag mahal at mag alaga ang isang Daniel Padilla para sayo.<br> Sa bawat araw ay hindi kita kasama, kahit magkalayo tayo sa isat' isa pagibig ko sayo hindi mawawala at sayo lang ako aking sinta.<br> <br>Kung ikaw ay nalulungkot lagi mo isipin ang mga masasayang araw natin na magkasama tayo, alam mo kung ano saakin? Yung araw na una natin pagkikita, sa buong buhay ko ngayon ko lang naramdaman ang paghinto ng mundo, na parang tayo dalawa lang ang tao nung araw na yun.<br> Kung nagtataka ka paano ako nakagawa ng site na ganito, well hindi ako gumawa netong site sa kaibigan kong IT (kita mo naman sa link kung sino) and hindi to libre lang, may deal kami.<br><br> Alam ko hindi tayo makakapagkita ng feb 14 at busy ka sa school, ngunit inaaya kita kung kaylan ka puwede at free ngayon buwan? kahit mag bonding lang tayo like nood ganon, miss ko na yung bonding natin eh :((( no pressure i can wait kung kaylan ka free. Yunn lang naway nagustuhan mo ang aking munting supresa sayo hehe. <br><br> Je t'aime, ich liebe dich, te amo. Tatlong magkakaibang lengguwahe pero iisa lang ang ibig sabihin nito, Mahal kita binibining maricar. <br><br><br><b>Nagmamahal <br>Daniel Padilla</b></span>",
+        text: "<span class='letter'> Hi loveyy<br><br> I just want to say that <b>i love you so muchh</b> and thank you for always being supportive sa pag momotor ko and pag may masakit sa katawanan ko <b>minamassage mo kagad kahit hindi ko naman po nirequest</b> thankyou din for caring sakin pag dating sa sakit dahil sa pag provide mo sakin ng gamot and pag open mo sakin to be open kay lord.<br><br> I just want to say na <b>i love you so so muchh</b> and <b>ill make bawi tommorow po huhu</b> and i hope you pass your LET exam okieee. <b>Will be supporting you hanggang mapasa mo po yan okieeee</b>.<br><br> <b>i loveee youu loveyyy</b> </span>",
         dull: false,
         button: "<3"
     },
     {
         img: 'last.gif',
-        text: "i love you - daniel",
+        text: "i lovee youu",
         dull: false,
         end: true
     }
