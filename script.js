@@ -44,7 +44,7 @@ const slides = [
     },
     {
         img: 'slide8.gif',
-        text: "<span class='letter'> Hi loveyy<br><br> I just want to say that <b>i love you so muchh</b> and thank you for always being supportive sa pag momotor ko and pag may masakit sa katawanan ko <b>minamassage mo kagad kahit hindi ko naman po nirequest</b> thankyou din for caring sakin pag dating sa sakit dahil sa pag provide mo sakin ng gamot and pag open mo sakin to be open kay lord.<br><br> I just want to say na <b>i love you so so muchh</b> and <b>ill make bawi tommorow po huhu</b> and i hope you pass your LET exam okieee. <b>Will be supporting you hanggang mapasa mo po yan okieeee</b>.<br><br> <b>i loveee youu loveyyy</b> </span>",
+        text: "<span class='letter'><b> Hi loveyy</b><br><br> I just want to say that <b>i love you so muchh</b> and thank you for always being supportive sa pag momotor ko and pag may masakit sa katawanan ko <b>minamassage mo kagad kahit hindi ko naman po nirequest</b> thankyou din for caring sakin pag dating sa sakit dahil sa pag provide mo sakin ng gamot and pag open mo sakin to be open kay lord.<br><br> I just want to say na <b>i love you so so muchh</b> and <b>ill make bawi tommorow po huhu</b> and i hope you pass your LET exam okieee. <b>Will be supporting you hanggang mapasa mo po yan okieeee</b>.<br><br> <b>i loveee youu loveyyy</b> </span>",
         dull: false,
         button: "<3"
     },
