@@ -1,32 +1,32 @@
 const slides = [
     {
         img: 'slide1.gif',
-        text: "HELLOOOO!",
+        text: "Hi boss",
         dull: true,
-        button: "HIII?"
+        button: "Hi"
     },
     {
         img: 'slide2.gif',
-        text: "feeling ko naman medjo halata na kung ano ito",
+        text: "Sana alam mo na kung anong reason neto",
         dull: true,
-        button: "di ahh"
+        button: "Hindi po"
     },
     {
         img: 'slide3.gif',
-        text: "ehhehe pasurvey survey pang nalalaman eh no",
+        text: "Kasi ano may gusto lang sana ako itanong hehe",
         dull: false,
-        button: "...."
+        button: "Ano yun?"
     },
     {
         img: 'slide4.gif',
-        text: "i knoww naa masama pa pakiramdam mo, and pagods u, pero...",
+        text: "I know busy ka and hindi tayo makapag date today kasi busy ang sched natin both",
         dull: false,
-        button: "???"
+        button: "Hay nako loveyy"
     },
     
     {
         img: 'slide5.jpeg',
-        text: "Will you be my Valentine?",
+        text: "But, Will you be my Valentine?",
         dull: false,
         question: true
     },
@@ -34,23 +34,23 @@ const slides = [
         img: 'accept.gif',
         text: "YYAAAAYYYY!!!!!!!",
         dull: false,
-        button: "baliw"
+        button: "Hay nako HAHAHA"
     },
     {
         img: 'slidemore.gif',
-        text: "meronnn mee surprisee paa for youu",
+        text: "Also meron pa me surprise pa",
         dull: false,
         button: "ano yon?"
     },
     {
         img: 'slide8.gif',
-        text: "<span class='letter'><b>Para sa aking nililigawan, Bri</b> <br><br>I hopee youu aree doingg welll despitee the hectic schedule you endured this previous week. It makes me genuinely worried a bit every time you undergo these busy timeframes spanning days or even weeks. I know and i do understand that you can do it, and that you are used to itt. I know that there is almost nothing you can do about it and that you can only tread forward during these extremely chaotic times and situations.<br><br><b>You are so so nice. you are such an amazing and strong person.</b><br><br>I know that i can't directly helpp with your situations. But i will always be heree to support you and help however i can. whether it be asking me for advice, or just simply playing with me. I will be here to give you comfort and rest. For a long treachorous journey through a dry desert,  i will try my bestt to provide you a cool oasis to aid in your journey.<br><br><b>That is why, i am writing to you this letter formally invite you to have dinner with me this saturday night after our duties.</b><br><br>I know that you are not feeling well as of now. And i know that maybe when Saturday comes you will be tired also. I am not pressuring or forcing you to accept this invitation even if we prearranged this beforehand. If you feel that you want to rest on the day of, or if you dont have an appetite, that is fully okay with me. So don't worry.<br><br>I know that we are both busy, and that this sem is a stressful sem for both of us. But i know we can get through this together. <b>You are already the guiding light for my dark environment. I hope i can be the same to you.</b><br><br>I like you so much, i hope this letter can fully convey that to you. Thank youu for your presence, your comfort, and yourkindness. I dont know if i can ever repay it to you.<br><br><b>i love u bri.</b><br><br><br>Your medyo chubby na manliligaw,<br><b>Yohan &lt;3</b></span>",
+        text: "<span class='letter'> Hi loveyy<br><br> I just want to say that <b>i love you so muchh</b> and thank you for always being supportive sa pag momotor ko and pag may masakit sa katawanan ko <b>minamassage mo kagad kahit hindi ko naman po nirequest</b> thankyou din for caring sakin pag dating sa sakit dahil sa pag provide mo sakin ng gamot and pag open mo sakin to be open kay lord.<br><br> I just want to say na <b>i love you so so muchh</b> and <b>ill make bawi tommorow po huhu</b> and i hope you pass your LET exam okieee. <b>Will be supporting you hanggang mapasa mo po yan okieeee</b>.<br><br> <b>i loveee youu loveyyy</b> </span>",
         dull: false,
         button: "<3"
     },
     {
         img: 'last.gif',
-        text: "thank youu - yohan",
+        text: "i lovee youu",
         dull: false,
         end: true
     }
